@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dohander-disc/static/css/main.98a90b6d.css",
+    "main.js": "/dohander-disc/static/js/main.bbb7075f.js",
+    "index.html": "/dohander-disc/index.html",
+    "main.98a90b6d.css.map": "/dohander-disc/static/css/main.98a90b6d.css.map",
+    "main.bbb7075f.js.map": "/dohander-disc/static/js/main.bbb7075f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98a90b6d.css",
+    "static/js/main.bbb7075f.js"
+  ]
+}
