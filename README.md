@@ -1,46 +1,73 @@
-# Getting Started with Create React App
+# 두핸즈 업무 성향 진단 시스템
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+두핸즈(주)에서 사용하는 업무 성향 진단 시스템입니다. DiSC 모델을 기반으로 구성원들의 업무 스타일을 파악하여 더 나은 협업 환경을 조성하는 데 도움을 줍니다.
 
-## Available Scripts
+## 기술 스택
 
-In the project directory, you can run:
+- React 19
+- TypeScript
+- Tailwind CSS
+- React Router DOM
 
-### `npm start`
+## 주요 기능
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 12개의 상황별 질문으로 구성된 DiSC 진단
+- 실시간 진행률 표시
+- 4가지 업무 성향 유형 결과 제공
+- 반응형 디자인
+- 상태 관리 (Context API)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## URL 구조
 
-### `npm test`
+- `localhost:3000` - 홈 화면 (진단 시작)
+- `localhost:3000/test` - 진단 질문 화면
+- `localhost:3000/result/[id]` - 결과 화면
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 설치 및 실행
 
-### `npm run build`
+```bash
+# 의존성 설치
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 개발 서버 실행
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 빌드
+npm run build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 업무 성향 유형
 
-### `npm run eject`
+1. **주도형 (D - Dominance)** - 결과 지향적, 추진력 있는 리더십
+2. **사교형 (i - Influence)** - 낙관적, 소통 능력이 뛰어남
+3. **안정형 (S - Steadiness)** - 협력적, 안정감을 중시
+4. **신중형 (C - Conscientiousness)** - 체계적, 정확성을 중시
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 프로젝트 구조
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+├── components/          # React 컴포넌트
+│   ├── HomePage.tsx    # 홈 화면
+│   ├── TestPage.tsx    # 진단 화면
+│   └── ResultPage.tsx  # 결과 화면
+├── context/            # Context API
+│   └── TestContext.tsx # 진단 상태 관리
+├── data/               # 데이터
+│   └── testData.ts     # 질문 및 결과 데이터
+├── types/              # TypeScript 타입 정의
+│   └── index.ts        # 인터페이스 정의
+└── App.tsx             # 메인 앱 컴포넌트
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 브랜드 정보
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **회사명**: 두핸즈(주)
+- **서비스명**: 품고 (http://poomgo.com/)
+- **주요 서비스**: 풀필먼트, 물류 솔루션
+- **브랜드 컬러**: 파란색 계열 (#1a365d, #3182ce)
 
-## Learn More
+## 참고 자료
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [잔디 블로그 - 업무타입 테스트](https://blog.jandi.com/ko/2022/07/29/work-type-test/)
+- DiSC 모델 기반 업무 성향 분석
