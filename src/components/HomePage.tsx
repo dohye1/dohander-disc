@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import dohandsLogo from '../assets/dohands.png';
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const HomePage: React.FC = () => {
         <div className="mb-6 sm:mb-8">
           <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-4 bg-white rounded-full flex items-center justify-center shadow-lg">
             <img 
-              src="/dohands.png" 
+              src={dohandsLogo} 
               alt="두핸즈 로고" 
               className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
             />
