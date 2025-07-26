@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { results } from '../data/testData';
 import { useTest } from '../context/TestContext';
+import dohandsLogo from '../assets/dohands.png';
 
 const ResultPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -88,7 +89,7 @@ const ResultPage: React.FC = () => {
           <div className="text-center mb-6 sm:mb-8">
             <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-4 sm:mb-6 bg-white rounded-full flex items-center justify-center shadow-lg">
               <img 
-                src="/dohands.png" 
+                src={dohandsLogo}
                 alt="두핸즈 로고" 
                 className="w-20 h-20 sm:w-28 sm:h-28 object-contain"
               />
