@@ -113,19 +113,19 @@ const TestPage: React.FC = () => {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-sm">
               <div className="flex items-center">
                 <span className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold mr-2">1</span>
-                <span className="text-blue-700">가장 잘 맞음 (4점)</span>
+                <span className="text-blue-700">가장 잘 맞음</span>
               </div>
               <div className="flex items-center">
                 <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-xs font-bold mr-2">2</span>
-                <span className="text-green-700">잘 맞음 (3점)</span>
+                <span className="text-green-700">잘 맞음</span>
               </div>
               <div className="flex items-center">
                 <span className="w-6 h-6 bg-yellow-500 text-white rounded-full flex items-center justify-center text-xs font-bold mr-2">3</span>
-                <span className="text-yellow-700">보통 (2점)</span>
+                <span className="text-yellow-700">보통</span>
               </div>
               <div className="flex items-center">
                 <span className="w-6 h-6 bg-red-500 text-white rounded-full flex items-center justify-center text-xs font-bold mr-2">4</span>
-                <span className="text-red-700">덜 맞음 (1점)</span>
+                <span className="text-red-700">덜 맞음</span>
               </div>
             </div>
           </div>
